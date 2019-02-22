@@ -58,7 +58,18 @@
                  }
                           document.getElementById("demo").innerHTML = text;  
           }
+          else if(Num2<Num1)
+          {
+            var i=Num2;
+            while(i<Num1){
+               text += "<br>"+ i;
+                   i++;
+            
+           }
+            document.getElementById("demo").innerHTML = text;  }
+
             else 
+          
           {
             alert("Enter The number which is greater than "+ Num1 + "instead of " + Num2)
           }
