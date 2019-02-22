@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+.row input{
+  background: lightgrey;
+  border: 2px inset;
+  color:black;
+}
+.row button{
+  color:black;
+  background: grey;
+  border: 4px inset;
+}
+</style>
+<body>
+     <div class="container-fluid text-center bg-primary">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+      <h1 class="title"> Number between the range</h1>
+            </div>
+        </div>
+     </div>
+     <div class="container-fluid text-center ">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12"><br><br>
+          <input type="text" id ="Num1" class="Num1"><br><br>
+          <h3 class="title">To</h3><br><br>
+        <input type="text" id ="Num2" class="Num2"><br><br>
+        <button type="button" onclick="myFunction()"  class="btn btn- text-white">To Check</button>
+         <p id="demo"></p>
+         </div>
+      </div>
+      </div>
+      <script>
+        function myFunction(){
+          var Num1=document.getElementById("Num1").value
+          var Num2=document.getElementById("Num2").value
+         
+           var text=""; 
+           
+         
+
+
+          if (Num1<Num2)
+          { 
+            var i=Num1;
+                 while(i<Num2)
+                 {
+                  text += "<br>"+ i;
+                   i++;
+                 }
+                          document.getElementById("demo").innerHTML = text;  
+          }
+            else 
+          {
+            alert("Enter The number which is greater than "+ Num1 + "instead of " + Num2)
+          }
+
+         
+         }
+        
+         
+       
+      
+
+      </script>
+
+     </body>
+     </html>
